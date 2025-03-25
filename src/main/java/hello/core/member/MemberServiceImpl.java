@@ -1,11 +1,13 @@
 package hello.core.member;
 
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component("memberService2")
+@Component("memberService")
 public class MemberServiceImpl implements MemberService{
 
+    // 테스트 용도
     //private final MemberRepository memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository;
 
@@ -28,4 +30,5 @@ public class MemberServiceImpl implements MemberService{
     public MemberRepository getMemberRepository() {
         return memberRepository;
     }
+
 }

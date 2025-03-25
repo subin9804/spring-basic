@@ -50,7 +50,7 @@ public class SingletonTest {
 
         // 스프링 컨테이너가 객체를 싱글톤으로 관리
         MemberService memberService1 = ac.getBean("memberService", MemberService.class);
-        MemberService memberService2 = ac.getBean("memberService2", MemberService.class);
+        MemberService memberService2 = ac.getBean("memberService", MemberService.class);
 
         System.out.println("memberService1 = " + memberService1);
         System.out.println("memberService2 = " + memberService2);
